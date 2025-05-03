@@ -1,0 +1,575 @@
+/* إعادة تعيين أساسي */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.single-news {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.single-news img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.single-news h1 {
+    margin-top: 20px;
+    font-size: 28px;
+}
+.single-news .category {
+    background: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.single-news .content {
+    margin-top: 20px;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #333;
+}
+
+.news-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.news-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.news-card h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.news-card p {
+    font-size: 16px;
+    color: #555;
+}
+.news-card .category {
+    display: inline-block;
+    margin-top: 10px;
+    background: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+/* إعادة تعيين أساسي */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f9f9f9;
+      line-height: 1.6;
+      color: #333;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 10px 0;
+    }
+    /* الهيدر واللغة */
+    header {
+      background-color: #006688;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      height: 50px;
+    }
+    .lang-toggle {
+      background-color: #ffcc00;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #003366;
+    }
+    /* السلايدر */
+    .slider {
+      position: relative;
+      overflow: hidden;
+      background-color: #eee;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slide {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+    .slide.active {
+      opacity: 8;
+    }
+    /* أقسام الأخبار */
+    .news-section {
+      padding: 30px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .news-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+    .news-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .news-card {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+    .news-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .news-card .card-content {
+      padding: 15px;
+    }
+    .news-card .card-content h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .news-card .card-content p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .news-card .card-content a {
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .news-card .card-content a:hover {
+      color: #ff6600;
+    }
+    /* تصميم كلمة "مباشر" */
+    .live-label {
+      background-color: red;
+      color: #fff;
+      padding: 3px 7px;
+      border-radius: 4px;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+
+
+.main-footer {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Cairo', sans-serif;
+}
+
+/* الحاوية المركزية */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* الهيدر */
+.main-header {
+  background-color: #007799;
+  padding: 10px 0;
+  position: sticky;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sec-header {
+  background-color: #006688;
+  padding: 10px 0;
+  position: sticky;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+}
+
+/* قائمة الكمبيوتر */
+.desktop-nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.desktop-nav .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.desktop-nav .nav-links li a:hover {
+  color: #ffcc00;
+}
+
+
+.mob-nav .mob-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.mob-nav .mob-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.mob-nav .mob-links li a:hover {
+  color: #ffcc00;
+}
+/* أيقونة القائمة للجوال */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* القائمة الجانبية للجوال (تغطي 80% من الشاشة) */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -80%;
+  width: 70%;
+  height: 100vh;
+  background-color: #006688;
+  transition: right 0.4s ease;
+  z-index: 1000;
+  padding-top: 50px;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.mobile-menu ul li {
+  margin: 20px 0;
+  text-align: center;
+  background-color: #007799;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.mobile-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.mobile-menu ul .span{
+    color: #fff;
+    font-size: 25px;
+    background: transparent;
+}
+
+/* عند تفعيل القائمة */
+.mobile-menu.active {
+  right: 0;
+}
+
+/* سكشن محرك البحث */
+.search-section {
+  padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.search-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-section input[type="text"] {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-section button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #003366;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-section button:hover {
+  background-color: #002244;
+}
+
+/* سكشن عنوان الأخبار */
+.news-headline {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.news-headline h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.news-headline .live-label {
+  background-color: red;
+  color: #fff;
+  padding: 3px 7px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+/* سكشن الأخبار - شبكة البطاقات */
+.news-grid {
+  padding: 40px 0;
+}
+
+.news-grid .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.news-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 15px;
+}
+
+.news-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.news-content p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.news-content a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.news-content a:hover {
+  color: #ff6600;
+}
+
+/* تجاوب الجوال */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mob-nav {
+    display: non;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* سكشن "عنا" */
+.about-us {
+  padding: 40px 0;
+  background-color: #f1f1f1;
+}
+
+.about-us span{
+    color: #003366;
+}
+
+.about-us h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* سكشن "اتصل بنا" */
+.contact-us {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.contact-us h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-us form {
+  max-width: 600px;
+  margin: auto;
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-us .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-us label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.contact-us button {
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+  transition: background-color 0.3s;
+}
+
+.contact-us button:hover {
+  background-color: #002244;
+}
+
+.main-footer {
+  background-color: #003366; /* لون خلفية الفوتر */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-links a {
+  color: #ffcc00; /* لون الروابط داخل الفوتر */
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+.main-footer p {
+  margin-top: 10px;
+  line-height: 1.5;
+}

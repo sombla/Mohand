@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مراسل حر</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- الهيدر -->
+  <header class="main-header">
+    <div class="container header-container">
+      <!-- اللوجو: تأكد من وضع صورة اللوجو باسم logo.png -->
+      <img src="imgs/IMG_٢٠٢٥٠٤٢٩_١٧٥٥٣٤.png" alt="مراسل حر" class="logo">
+      <!-- قائمة الأقسام للشاشات الكبيرة -->
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+            <li><a href="#">الرئيسية</a></li>
+            
+            <li><a href="#sudan-now">السودان الآن</a></li>
+            <li><a href="#global-news">الأخبار العالمية</a></li>
+          <li><a href="#economic-news">الأخبار الإقتصادية</a></li>
+          <li><a href="#sports-news">الأخبار الرياضة</a></li>
+        
+        </ul>
+      </nav>
+      <!-- أيقونة القائمة للجوال -->
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+  </header>
+  
+  
+  <header class="sec-header">
+    <div class="container header-container">
+      <!-- قائمة الأقسام للشاشات الكبيرة -->
+      <nav class="mob-nav">
+        <ul class="mob-links">
+            <li><a href="#">الرئيسية</a></li>
+            
+            <li><a href="#sudan-now">السودان الآن</a></li>
+            <li><a href="#global-news">العالمية</a></li>
+          <li><a href="#economic-news"> الإقتصادية</a></li>
+          <li><a href="#sports-news"> الرياضة</a></li>
+         
+        </ul>
+      </nav>
+     
+  </header>
+
+  <!-- القائمة الجانبية للجوال (تغطي جزء من الشاشة وليس كاملها) -->
+  <div id="mobile-menu" class="mobile-menu">
+    <ul>
+       <li><a href="#">الرئيسية</a></li>
+            
+            <li><a href="#sudan-now">السودان الآن</a></li>
+            <li><a href="#global-news">الأخبار العالمية</a></li>
+          <li><a href="#economic-news">الأخبار الاقتصادية</a></li>
+          <li><a href="#sports-news">الأخبار الرياضية</a></li>
+          <li><a href="#about-us">من نحن</a></li>
+          <li><a href="#social-media">تابعنا</a></li>
+          <li><a href="#contact-us">أتصل بنا</a></li>
+        
+    </ul>
+  </div>
+
+  <!-- سكشن محرك البحث -->
+  <section class="search-section">
+    <div class="container">
+      <input type="text" placeholder="ابحث عن أخبار ..." id="search-input">
+      <button id="search-btn">بحث</button>
+    </div>
+  </section>
+
+  <!-- سكشن عنوان الأخبار -->
+  <section class="news-headline">
+    <div class="container">
+      <h2>
+        آخر الأخبار العاجلة الآن 
+        <span class="live-label">مباشر</span>        
+      </h2>
+    </div>
+  </section>
+
+  <!-- سكشن عرض الأخبار (بطاقات الأخبار) -->
+  <section class="news-grid" id="hot-news">
+    <div class="container">
+      <!-- مثال على بطاقة خبر -->
+      <article class="news-card">
+        <img src="imgs/Canon-EF-50mm-f1.webp" alt="خبر 1">
+        <div class="news-content">
+          <h3>غلاء أسعار العدسات </h3>
+          <p>شهد اليوم سوق فريمو للعدسات ارتفاعا حادا فى أسعار العدسات وبلغ سعر العدسة ال 50mmCanon-EF-50mm-f1 450.000 جنيه سوداني</p>
+          <a href="#">اقرأ المزيد</a>
+        </div>
+      </article>
+      <!-- تكرار بطاقة خبر آخر -->
+      <article class="news-card">
+        <img src="imgs/image-shows-interface-modern-app-web-application.jpg" alt="خبر 2">
+        <div class="news-content">
+          <h3>زيادة في تعريفه التصاميم</h3>
+          <p>اليوم الأحد الموافق 5/4/2025 زياره واسعة في تعرفة تصاميم السوشيال ميديا وأدى ذلك جدال واسعا فى الزيادة .</p>
+          <a href="#">اقرأ المزيد</a>
+        </div>
+      </article>
+      
+      <article class="news-card">
+        <img src="imgs/Canon-EF-50mm-f1.webp" alt="خبر 1">
+        <div class="news-content">
+          <h3>غلاء أسعار العدسات </h3>
+          <p>شهد اليوم سوق فريمو للعدسات ارتفاعا حادا فى أسعار العدسات وبلغ سعر العدسة ال 50mmCanon-EF-50mm-f1 450.000 جنيه سوداني</p>
+          <a href="#">اقرأ المزيد</a>
+        </div>
+      </article>
+      <!-- تكرار بطاقة خبر آخر -->
+      <article class="news-card">
+        <img src="imgs/logo.jpeg" alt="خبر 2">
+        <div class="news-content">
+          <h3>زيادة في تعريفه التصاميم</h3>
+          <p>اليوم الأحد الموافق 5/4/2025 زياره واسعة في تعرفة تصاميم السوشيال ميديا وأدى ذلك جدال واسعا فى الزيادة .</p>
+          <a href="#">اقرأ المزيد</a>
+        </div>
+      </article>
+      <!-- يمكنك تكرار المزيد من بطاقات الأخبار حسب الحاجة -->
+    </div>
+  </section>
+  
+
+  <!-- الهيدر مع زر تغيير اللغة -->
+  <header>
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+      <!-- اللوجو: تأكد من وضع صورة اللوجو باسم logo.png -->
+      <img src="imgs/IMG_٢٠٢٥٠٤٢٩_١٧٥٥٣٤.png" alt="مراسل حر" class="logo">
+      <!-- زر تغيير اللغة -->
+      <button class="lang-toggle" onclick="toggleLanguage()">عربي / English</button>
+    </div>
+  </header>
+
+  <!-- سكشن السلايدر -->
+  <section class="slider">
+    <div class="slide active">خبر عاجل: ارتفاع أسعار  الوقود يؤثر على الجميع لذلك لابد من تخفيض الأسعار</div>
+    
+    <div class="slide active"></div></d ارتفاعivسعار  الوقود >ؤثر على الجميع لذلك لابد من تخفيض الأسعا</div>خبر عاجل: أير</div>
+    
+    <div class="slide"> خبر عاجل: قرارات حكومية جديدة فى ولاية جنوب دارفور لتخفيف الأزمة</div>
+    <div class="slide">خبر عاجل: ارتفاع في معدلات البطالة في السودان</div>
+  </section>
+
+  <!-- سكشن "السودان الآن" (يأتي أولاً) -->
+  <section class="news-section" id="sudan-now">
+    <div class="container">
+      <h2>السودان الآن</h2>
+      <div class="news-cards">
+        <!-- بطاقة خبر (مثال) -->
+        <div class="news-card">
+          <img src="imgs/Photo_1740543026596_NVXuso8C1X_9xp4s87M16.jpeg" alt="خبر السودان الآن">
+          <div class="card-content">
+            <h3>عنوان خبر السودان الآن 1</h3>
+            <p>وصف مختصر عن الخبر لجذب الانتباه.</p>
+            <a href="#">اقرأ المزيد</a>
+          </div>
+        </div>
+        <!-- تكرار بطاقة خبر -->
+        <div class="news-card">
+          <img src="imgs/Photo_1740543026596_NVXuso8C1X_9xp4s87M16.jpeg" alt="خبر السودان الآن">
+          <div class="card-content">
+            <h3>عنوان خبر السودان الآن 2</h3>
+            <p>وصف مختصر عن الخبر لجذب الانتباه.</p>
+            <a href="#">اقرأ المزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+   <!-- سكشن "الأخبار العالمية" -->
+  <section class="news-section" id="global-news">
+    <div class="container">
+      <h2>الأخبار العالمية</h2>
+      <div class="news-cards">
+        <div class="news-card">
+          <img src="imgs/logo.jpeg" alt="خبر عالمي">
+          <div class="card-content">
+            <h3>عنوان خبر عالمي 1</h3>
+            <p>وصف مختصر عن الخبر العالمي.</p>
+            <a href="#">اقرأ المزيد</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <img src="imgs/logo.jpeg" alt="خبر عالمي">
+          <div class="card-content">
+            <h3>عنوان خبر عالمي 2</h3>
+            <p>وصف مختصر عن الخبر العالمي.</p>
+            <a href="#">اقرأ المزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- سكشن "أخبار الاقتصاد" -->
+  <section class="news-section" id="economic-news">
+    <div class="container">
+      <h2>أخبار الاقتصاد</h2>
+      <div class="news-cards">
+        <div class="news-card">
+          <img src="imgs/logo.jpeg" alt="خبر اقتصاد">
+          <div class="card-content">
+            <h3>عنوان خبر اقتصادي 1</h3>
+            <p>وصف مختصر عن الخبر الاقتصادي.</p>
+            <a href="#">اقرأ المزيد</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <img src="imgs/logo.jpeg" alt="خبر اقتصاد">
+          <div class="card-content">
+            <h3>عنوان خبر اقتصادي 2</h3>
+            <p>وصف مختصر عن الخبر الاقتصادي.</p>
+            <a href="#">اقرأ المزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- سكشن "الأخبار الرياضية" -->
+  <section class="news-section" id="sports-news">
+    <div class="container">
+      <h2>الأخبار الرياضية</h2>
+      <div class="news-cards">
+        <div class="news-card">
+          <img src="imgs/logo.jpeg" alt="خبر رياضي">
+          <div class="card-content">
+            <h3>عنوان خبر رياضي 1</h3>
+            <p>وصف مختصر عن الخبر الرياضي.</p>
+            <a href="#">اقرأ المزيد</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <img src="imgs/logo.jpeg" alt="خبر رياضي">
+          <div class="card-content">
+            <h3>عنوان خبر رياضي 2</h3>
+            <p>وصف مختصر عن الخبر الرياضي.</p>
+            <a href="#">اقرأ المزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- JavaScript -->
+  <script>
+    // دالة تغيير اللغة (تبديل بين النص العربي والنص الإنجليزي كمثال بسيط)
+    function toggleLanguage() {
+      // يمكن توسيع الدالة لتغيير محتويات الصفحة بلغة مختلفة
+      alert("تغيير اللغة سيتم تطويره لاحقاً.");
+    }
+
+    // سكريبت السلايدر: التبديل بين الأخبار كل ثانية (1000 مللي ثانية)
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    setInterval(() => {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }, 3000);
+  </script>
+
+<!-- سكشن "عنا" -->
+<section class="about-us" id="about-us">
+  <div class="container">
+    <h2>من نحن</h2>
+    <p>
+      نحن فريق <span>مراسل حر</span>، موقع إخباري يقدم أحدث الأخبار والمقالات بجودة احترافية وتغطية شاملة. نسعى دائمًا لنقل الحقيقة بدقة ومصداقية، ونهدف إلى إثراء المحتوى الإعلامي بمعلومات موثوقة وتحليلات معمقة.
+    </p>
+  </div>
+</section>
+
+<section id="social-media" style="background: #ffffff; padding: 40px 0; text-align: center;">
+  <h2 style="font-family: 'Cairo', sans-serif; font-size: 24px; color: #003366; margin-bottom: 30px;">تابعنا على مواقع التواصل الاجتماعي</h2>
+  <div style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
+    <a href="https://www.facebook.com/share/1BR53xNJ1q/" target="_blank" style="color: #3b5998; font-size: 28px; transition: transform 0.3s;">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="#" target="_blank" style="color: #1DA1F2; font-size: 28px; transition: transform 0.3s;">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="#" target="_blank" style="color: #E4405F; font-size: 28px; transition: transform 0.3s;">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#" target="_blank" style="color: #FF0000; font-size: 28px; transition: transform 0.3s;">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="#" target="_blank" style="color: #25D366; font-size: 28px; transition: transform 0.3s;">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+</section>
+
+<!-- مكتبة Font Awesome لتحميل الأيقونات -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- تأثير hover يكبر الايقونات -->
+<style>
+  #social-media a:hover {
+    transform: scale(1.2);
+  }
+</style>
+
+
+
+
+
+<!-- سكشن "اتصل بنا" -->
+<section class="contact-us" id="contact-us">
+  <div class="container">
+    <h2>اتصل بنا</h2>
+    <form action="contact.php" method="post">
+      <div class="form-group">
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required placeholder="اكتب اسمك">
+      </div>
+      <div class="form-group">
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required placeholder="اكتب بريدك الإلكتروني">
+      </div>
+      <div class="form-group">
+        <label for="subject">الموضوع:</label>
+        <input type="text" id="subject" name="subject" required placeholder="اكتب موضوع الرسالة">
+      </div>
+      <div class="form-group">
+        <label for="message">الرسالة:</label>
+        <textarea id="message" name="message" rows="5" required placeholder="اكتب رسالتك هنا"></textarea>
+      </div>
+      <button type="submit">إرسال</button>
+    </form>
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="container footer-container">
+    <div class="footer-links">
+      <a href="#">اتصل بنا</a> | 
+      <a href="#">عن مراسل حر</a>
+    </div>
+    <p>كل الحقوق محفوظة لدى <strong>مراسل حر</strong> 2020<br>
+       طور بواسطة <strong>Sombl studio</strong>
+    </p>
+  </div>
+</footer>
+  <script>
+    // دالة فتح وإغلاق القائمة الجانبية (في الجوال)
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
